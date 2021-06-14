@@ -1,0 +1,23 @@
+/*! @import */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    @apply h-full;
+  }
+  button {
+    @apply border-0 focus:outline-none;
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #e1e1e1;
+    border-radius: 5px;
+  }
+}
