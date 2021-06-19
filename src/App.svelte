@@ -138,7 +138,7 @@
 
 <div class="h-full lg:grid grid-cols-2 grid-rows-2">
   {#each todos as { label, bgColor, color, list }, index (index)}
-  <div class="todos p-4 flex flex-col border-0" class:lg:border-r={index % 2 === 0} class:lg:border-t={index > 1}>
+  <div class="todos p-4 flex flex-col" class:lg:border-r={index % 2 === 0} class:lg:border-t={index > 1}>
     <div 
       class="label p-3 rounded mb-2 flex justify-between cursor-pointer" 
       style={`background-color: ${bgColor}; color: ${color};`} 
